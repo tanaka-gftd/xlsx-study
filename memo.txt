@@ -1,0 +1,40 @@
+その他
+
+
+
+シートを移動の移動
+  シートを最後に移動させる方法
+  シートを指定した番号に移動させる方法
+  シートを特定のシートの前に移動させる方法
+など
+（例）
+// 'Sheet1' という名前のシートを最後に移動する
+workbook.moveSheet("Sheet1");
+
+// 'Sheet1' という名前のシートを２の位置（番号は0から始まる）に移動する
+workbook.moveSheet("Sheet1", 2);
+
+// 'Sheet1' という名前のシートを 'Sheet2' の前に移動する
+workbook.moveSheet("Sheet1", "Sheet2");
+
+
+
+
+シートの名前変更
+（例）
+// 先頭（=0の位置）のシートの名前を変更する
+const sheet = workbook.sheet(0).name("new sheet name");
+
+
+
+
+シートの削除
+（例）
+// 'Sheet1' という名前のシートを削除する
+workbook.deleteSheet("Sheet1");
+
+// ２の位置（番号は0から始まる）にあるシートを削除する
+workbook.deleteSheet(2);
+
+// sheet オブジェクトがあれば `delete 関数` を実行しても削除できる
+workbook.sheet(0).delete();
