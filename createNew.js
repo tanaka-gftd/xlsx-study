@@ -12,6 +12,17 @@ XlsxPopulate.fromBlankAsync().then(workbook => {  //then以下のworkbookは、�
   */
   workbook.sheet('Sheet1').cell('A1').value('新しく作った Excel');
 
+
+  //セルの横幅を広げる
+  /* 
+    sheet.column(半角英字)...シートの列(カラム)を指定
+    column.width(数値)..横幅設定
+
+    sheet.row(半角数字)...シートの行(ロウ)を指定
+    row.height(数値)..縦幅設定
+ */
+  workbook.sheet('Sheet1').column('A').width(25);
+
   //Excelファイルの書き出し
   //Excelオブジェクト.toFileAsync...Excelを書き出す(引数で書き出すファイル名を指定できる)
   return workbook.toFileAsync("./Book1.xlsx");
