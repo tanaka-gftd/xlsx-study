@@ -1,3 +1,6 @@
+/* Excelファイルからセルの値を読み取り */
+
+
 const XlsxPopulate = require('xlsx-populate');
 
 //既存のワークブックを取得して、その値を読み込む

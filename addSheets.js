@@ -1,3 +1,6 @@
+/* 既存のExcelファイルにシートを追加 */
+
+
 const XlsxPopulate = require('xlsx-populate');
 
 //workbookにシートを追加していく

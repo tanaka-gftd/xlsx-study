@@ -1,3 +1,6 @@
+/* 新規にExcelファイル作成 */
+
+
 const XlsxPopulate = require('xlsx-populate');
 
 //空のワークブックを作成し、文章を入れる

@@ -1,3 +1,6 @@
+/* セル範囲への書き込み */
+
+
 const XlsxPopulate = require('xlsx-populate');
 
 /* 
