@@ -48,5 +48,5 @@ XlsxPopulate.fromBlankAsync().then(workbook => {
   range.value((cell, ri, ci, range) => Math.floor(Math.random() * 101));
 
   //Excelファイルへの書き出し
-  return workbook.toFileAsync("./points.xlsx");
+  return workbook.toFileAsync("./xlsxFiles/points.xlsx");
 });

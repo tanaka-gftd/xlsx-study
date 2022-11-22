@@ -28,5 +28,5 @@ XlsxPopulate.fromBlankAsync().then(workbook => {  //then以下のworkbookは、�
 
   //Excelファイルの書き出し
   //Excelオブジェクト.toFileAsync...Excelを書き出す(引数で書き出すファイル名を指定できる)
-  return workbook.toFileAsync("./Book1.xlsx");
+  return workbook.toFileAsync("./xlsxFiles/Book1.xlsx");
 });

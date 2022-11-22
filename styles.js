@@ -65,5 +65,5 @@ XlsxPopulate.fromBlankAsync().then(workbook => {
   sheet.column('A').width(15);
 
   //作成したものを新規ファイルに書き出し
-  return workbook.toFileAsync("./styles.xlsx");
+  return workbook.toFileAsync("./xlsxFiles/styles.xlsx");
 });

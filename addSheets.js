@@ -27,5 +27,5 @@ XlsxPopulate.fromBlankAsync().then(workbook => {
   const sheet4 = workbook.addSheet('Sheet4', sheet5);
 
   //Excelファイルの書き出し
-  return workbook.toFileAsync("./sheetTest.xlsx");
+  return workbook.toFileAsync("./xlsxFiles/sheetTest.xlsx");
 });

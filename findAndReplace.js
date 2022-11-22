@@ -4,7 +4,7 @@
 const XlsxPopulate = require('xlsx-populate');
 
 //既存のワークブックを読み込んで、その中から文字列を検索 ＆ 文字列を置き換え ＆ 別ファイルに書き出し
-XlsxPopulate.fromFileAsync("./points.xlsx").then(workbook => {
+XlsxPopulate.fromFileAsync("./xlsxFiles/points.xlsx").then(workbook => {
 
   //文字列検索、一致したセルを配列で返す
   workbook.find("得点表");  //一致したセルを配列で返す
@@ -22,5 +22,5 @@ XlsxPopulate.fromFileAsync("./points.xlsx").then(workbook => {
   workbook.find(/[a-z]+/g, match => match.toUpperCase());
 
   //以上の操作によって作成されたExcelファイルを、新規ワークブックに書き出し
-  return workbook.toFileAsync("./points2.xlsx");
+  return workbook.toFileAsync("./xlsxFiles/points2.xlsx");
 });
