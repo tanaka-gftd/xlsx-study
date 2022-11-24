@@ -17,5 +17,5 @@ XlsxPopulate.fromBlankAsync().then(workbook => {
   workbook.sheet(0).column('A').width(30);
 
   //作成したものを新規ファイルに書き出し
-  return workbook.toFileAsync("./date.xlsx");
+  return workbook.toFileAsync("./xlsxFiles/date.xlsx");
 });
